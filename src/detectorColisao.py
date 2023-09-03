@@ -4,13 +4,13 @@ def readSensor():
     # minimal distance == 5m
     pass
 
-def blinkLED():
-    # print some LED ON/OFF information
+def blinkLED(freq):
+    # print some LED ON/OFF information with freq info
     pass
 
 
-def soundBuzzer():
-    # print some buzzer sound information
+def soundBuzzer(freq):
+    # print some buzzer sound information with freq info
     pass
 
 
@@ -23,8 +23,9 @@ while(True):
 
     # Decision logic to activate led and buzzer
     if ((sensor1 == True) or (sensor2 == True)):
-        blinkLED()
-        soundBuzzer()
+        blinkLED(1)
+        soundBuzzer(1)
+            
     else:
         pass
 
